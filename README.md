@@ -1,4 +1,4 @@
-Hello_world
+Soluciones OMIBC
 ===========
 
-#This is an example of a github repo
+Soluciones a problemas de la Olimpiada Mexicana de Informática del estado de Baja California
