@@ -1,3 +1,14 @@
+class program {
+void turnX(m){
+    iterate(m) turnleft();
+}
+void subeEscalon(){
+    move();
+    turnleft();
+    move();
+    turnX(3);
+}
+void veOrigen(){
     while(!facingWest) turnleft();
     iterate(2){
         while(frontIsClear) move();
