@@ -1,0 +1,21 @@
+class program {
+void mover()
+{
+    if(notNextToABeeper)
+    {
+        move();
+        mover();
+        move();
+    }
+    else
+    {
+        turnleft();             
+    }
+}
+program() {
+    while(notFacingEast)turnleft();
+    mover();
+    turnoff();
+}
+
+}

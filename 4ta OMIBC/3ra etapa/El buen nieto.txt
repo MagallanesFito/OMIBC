@@ -1,0 +1,35 @@
+class program {
+void invertir()
+{
+    if(notNextToABeeper)
+    {
+        turnleft();
+        move();
+        pickbeeper();
+        iterate(2)turnleft();
+        move();
+        putbeeper();
+        turnleft();
+    }
+    else
+    {
+        turnleft();
+        pickbeeper();
+        move();
+        putbeeper();
+        iterate(2)turnleft();
+        move();
+        turnleft();
+    }
+}
+program() {
+    while(frontIsClear)
+    {
+        invertir();
+        move();
+    }
+    invertir();
+    turnoff();
+}
+
+}

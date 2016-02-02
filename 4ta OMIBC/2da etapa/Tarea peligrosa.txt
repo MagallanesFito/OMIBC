@@ -1,0 +1,15 @@
+class program {
+
+program() {
+    while(notFacingEast)turnleft();
+    while(nextToABeeper)
+    {
+        pickbeeper();
+        iterate(2)turnleft();
+    }
+    move();
+    while(nextToABeeper)pickbeeper();
+    turnoff();
+}
+
+}

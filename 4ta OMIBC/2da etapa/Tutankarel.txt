@@ -1,0 +1,27 @@
+class program {
+void llenar()
+{
+    iterate(4)
+    {
+        if(frontIsClear)putbeeper();
+        turnleft();
+    }
+    iterate(4)
+    {
+        if(frontIsClear)
+        {
+            move();
+            if(notNextToABeeper)llenar();
+            iterate(2)turnleft();
+            move();
+            iterate(2)turnleft();
+        }
+        turnleft();
+    }
+}
+program() {
+    llenar();
+    turnoff();
+}
+
+}
