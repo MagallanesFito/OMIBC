@@ -10,7 +10,7 @@ void solve(int n,string x){
     else{
         for(int i=1;i<=n;i++){
             x = x + numeros[i];
-            soluciones(n-i,x);
+            solve(n-i,x);
             x  = x.substr(0,x.length()-1);
         }
     }
